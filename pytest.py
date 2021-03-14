@@ -2,8 +2,6 @@ import discord
 import requests
 from bs4 import BeautifulSoup
 from discord.ext import commands
-import load_json_variable as variable
-import json
 import re
 bot = commands.Bot(command_prefix='$')
 

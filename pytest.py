@@ -2,7 +2,7 @@ import discord
 import requests
 from bs4 import BeautifulSoup
 from discord.ext import commands
-import re
+#import re
 bot = commands.Bot(command_prefix='$')
 
 @bot.event
@@ -74,7 +74,7 @@ async def on_message(message):
         split7 = ' '.join(split5[2:])
         for i in range(split6):
             await message.channel.send(split7)
-    if message.content[0:4] == "$번역 ":
+    """if message.content[0:4] == "$번역 ":
         url2 = 'https://papago.naver.com/'
         q = message.content[4:]
 
@@ -91,7 +91,7 @@ async def on_message(message):
         await message.channel.send(q)
 
         await message.channel.send(dict)
-
+"""
 
 
 
